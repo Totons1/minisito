@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listino Viaggi - Agenzia di Viaggi</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #2d3e50;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 50px 0;
+        }
+        h1 {
+            font-size: 36px;
+            margin-bottom: 40px;
+        }
+        .trip {
+            display: flex;
+            margin-bottom: 30px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .trip img {
+            width: 250px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-right: 20px;
+        }
+        .trip-info {
+            max-width: 600px;
+        }
+        .trip-info h2 {
+            margin-top: 0;
+            font-size: 28px;
+        }
+        .trip-info p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #555;
+        }
+        .price {
+            font-size: 20px;
+            font-weight: bold;
+            color: #e74c3c;
+            margin-top: 10px;
+        }
+        .button {
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 15px;
+        }
+        .button:hover {
+            background-color: #2980b9;
+        }
+        .trip-list {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Listino Viaggi Disponibili</h1>
+    </header>
+
+    <div class="container">
+        <div class="trip-list">
+            <!-- Viaggio 1 -->
+            <div class="trip">
+                <img src="toureuropa.jpg" alt="Viaggio 1">
+                <div class="trip-info">
+                    <h2>Tour in Europa</h2>
+                    <p>Un'avventura attraverso le città storiche di Parigi, Londra e Roma. Scopri l'arte, la cultura e la cucina europea in un unico viaggio.</p>
+                    <div class="price">€1.200</div>
+                    <a href="#" class="button">Prenota Ora</a>
+                </div>
+            </div>
+
+            <!-- Viaggio 2 -->
+            <div class="trip">
+                <img src="safari.jpg" alt="Viaggio 2">
+                <div class="trip-info">
+                    <h2>Safari in Africa</h2>
+                    <p>Un'esperienza unica tra le meraviglie naturali dell'Africa, esplorando i parchi naturali e vivendo il fascino degli animali selvatici nel loro habitat.</p>
+                    <div class="price">€2.500</div>
+                    <a href="#" class="button">Prenota Ora</a>
+                </div>
+            </div>
+
+            <!-- Viaggio 3 -->
+            <div class="trip">
+                <img src="tokyo.jpg" alt="Viaggio 3">
+                <div class="trip-info">
+                    <h2>Tour in Giappone</h2>
+                    <p>Scopri la bellezza unica del Giappone, visitando Tokyo, Kyoto e Osaka, tra tradizione, tecnologia e cultura millenaria.</p>
+                    <div class="price">€1.800</div>
+                    <a href="#" class="button">Prenota Ora</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
